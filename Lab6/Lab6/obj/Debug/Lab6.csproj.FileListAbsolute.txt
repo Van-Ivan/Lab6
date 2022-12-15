@@ -6,3 +6,5 @@ D:\github\Lab6\Lab6\Lab6\obj\Debug\Lab6.csproj.SuggestedBindingRedirects.cache
 D:\github\Lab6\Lab6\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
 D:\github\Lab6\Lab6\Lab6\obj\Debug\Lab6.exe
 D:\github\Lab6\Lab6\Lab6\obj\Debug\Lab6.pdb
+D:\github\Lab6\Lab6\Lab6\obj\Debug\Lab6.FunctionGraph.resources
+D:\github\Lab6\Lab6\Lab6\obj\Debug\Lab6.csproj.GenerateResource.cache

@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4879EEF-B4BF-4FB6-A470-202A47BBE005}</ProjectGuid>
+    <ProjectGuid>{B4BB0A3C-6F52-4BF3-B1E9-18ADDE140B07}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab6</RootNamespace>
-    <AssemblyName>Lab6</AssemblyName>
+    <RootNamespace>AddictiveTask</RootNamespace>
+    <AssemblyName>AddictiveTask</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,9 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,30 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equation.cs" />
-    <Compile Include="FunctionGraph.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FunctionGraph.Designer.cs">
-      <DependentUpon>FunctionGraph.cs</DependentUpon>
-    </Compile>
     <Compile Include="Integrator.cs" />
     <Compile Include="IntegratorQuad.cs" />
     <Compile Include="IntegratorSimpson.cs" />
     <Compile Include="IntegratorTrap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuadCosEquation.cs" />
-    <Compile Include="QuadEquation.cs" />
-    <Compile Include="SinEquation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FunctionGraph.resx">
-      <DependentUpon>FunctionGraph.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
