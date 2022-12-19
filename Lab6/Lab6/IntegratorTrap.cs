@@ -17,13 +17,12 @@ namespace Lab6
         {
             int N = 100;
             double h = (x2 - x1) / N;
-            double integralSum = 0;
+            double integralSum = equation.GetValue(x1) + equation.GetValue(x2);
             for (int i = 1; i < N; i++) 
             {
-                double xCurrent = x1 + i * h;
-                double xNext = x1 + (i + 1) * h;
-                integralSum += 0.5*(xNext - xCurrent) * (equation.GetValue(xCurrent) + equation.GetValue(xNext));
+                integralSum += equation.GetValue(x1 + i*h);
             }
+            integralSum *= h;
             return integralSum;
         }
     }
